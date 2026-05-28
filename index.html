@@ -6,7 +6,7 @@
 <title>砥綿ゴルフコーチング — 福岡・博多</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Serif+JP:wght@300;400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Serif+JP:wght@300;400;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
 /* ── Reset & Base ─────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -27,7 +27,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.8;
   font-size: 15px;
   -webkit-font-smoothing: antialiased;
@@ -42,10 +42,10 @@ img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
 
 h1, h2, h3 {
-  font-family: 'Noto Serif JP', serif;
-  font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: 0.05em;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
 }
 
 /* ── Fade-in ───────────────────────────────────── */
@@ -80,11 +80,11 @@ section:nth-of-type(even) { background: var(--bg-alt); }
 /* ── Section Title ─────────────────────────────── */
 .sec-title { text-align: center; margin-bottom: 3rem; }
 .sec-title h2 {
-  font-family: 'Noto Serif JP', serif;
-  font-weight: 400;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 900;
   font-size: clamp(1.3rem, 3vw, 1.9rem);
   color: var(--text);
-  letter-spacing: 0.12em;
+  letter-spacing: -0.01em;
   margin-bottom: 0.5rem;
 }
 .sec-en {
@@ -268,12 +268,12 @@ section:nth-of-type(even) { background: var(--bg-alt); }
   padding: 0 clamp(1.5rem, 6vw, 5rem);
 }
 .hero-main {
-  font-family: 'Noto Serif JP', serif;
-  font-size: clamp(1.5rem, 4vw, 3rem);
-  font-weight: 300;
-  line-height: 1.7;
-  letter-spacing: 0.1em;
-  margin-bottom: 1.4rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: clamp(1.6rem, 4.5vw, 3.2rem);
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.2rem;
 }
 .hero-sub-text {
   font-size: clamp(12px, 2vw, 14px);
@@ -338,13 +338,14 @@ section:nth-of-type(even) { background: var(--bg-alt); }
   padding-top: 4px;
 }
 .pain-title {
-  font-family: 'Noto Serif JP', serif;
-  font-weight: 300;
-  font-size: 1.02rem;
-  margin-bottom: 0.4rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
   color: var(--text);
+  letter-spacing: -0.01em;
 }
-.pain-body { color: var(--muted); font-size: 14px; line-height: 1.9; }
+.pain-body { color: var(--muted); font-size: 14px; line-height: 1.85; font-weight: 400; }
 
 
 /* ══════════════════════════════════════════════════
@@ -357,21 +358,22 @@ section:nth-of-type(even) { background: var(--bg-alt); }
   border-left: 3px solid var(--gold);
 }
 .philosophy-quote {
-  font-family: 'Noto Serif JP', serif;
-  font-weight: 300;
-  font-size: clamp(1.1rem, 2.8vw, 1.65rem);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.1rem, 2.8vw, 1.55rem);
   line-height: 1.85;
   color: var(--text);
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
 }
-.philosophy-sub { color: var(--muted); font-size: 14px; line-height: 2; }
+.philosophy-sub { color: var(--muted); font-size: 14px; line-height: 1.9; font-weight: 400; }
 
 
 /* ══════════════════════════════════════════════════
    4. なぜ違うのか
 ══════════════════════════════════════════════════ */
-.why-lead { color: var(--muted); margin-bottom: 2.5rem; font-size: 15px; }
-.why-lead strong { color: var(--text); font-weight: 400; }
+.why-lead { color: var(--muted); margin-bottom: 2.5rem; font-size: 15px; font-weight: 400; }
+.why-lead strong { color: var(--text); font-weight: 700; }
 .why-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -393,11 +395,12 @@ section:nth-of-type(even) { background: var(--bg-alt); }
   display: block;
 }
 .why-card h3 {
-  font-family: 'Noto Serif JP', serif;
-  font-weight: 300;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
   font-size: 1rem;
   margin-bottom: 0.7rem;
   color: var(--text);
+  letter-spacing: -0.01em;
 }
 .why-card p { color: var(--muted); font-size: 13px; line-height: 1.9; }
 .why-card.full-width {
@@ -540,7 +543,7 @@ section:nth-of-type(even) { background: var(--bg-alt); }
   padding-top: 4px;
   opacity: 0.65;
 }
-.lesson-item h3 { font-size: 1rem; font-weight: 300; margin-bottom: 0.5rem; color: var(--text); }
+.lesson-item h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text); letter-spacing: -0.01em; }
 .lesson-body { color: var(--muted); font-size: 13px; line-height: 1.9; margin-bottom: 0.9rem; }
 .lesson-tag {
   display: inline-block;
@@ -701,11 +704,12 @@ section:nth-of-type(even) { background: var(--bg-alt); }
   flex-shrink: 0;
 }
 .future-title {
-  font-family: 'Noto Serif JP', serif;
-  font-weight: 300;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
   font-size: 1rem;
   margin-bottom: 0.4rem;
   color: var(--text);
+  letter-spacing: -0.01em;
 }
 .future-body { color: var(--muted); font-size: 13px; line-height: 1.9; }
 
@@ -722,7 +726,7 @@ section:nth-of-type(even) { background: var(--bg-alt); }
   border: none;
   color: var(--text);
   font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 14px;
   text-align: left;
   padding: 1.4rem 0;
@@ -801,7 +805,7 @@ footer {
 
   /* ── Base & 横スクロール防止 ──────────── */
   html, body { overflow-x: hidden; }
-  body { font-size: 14px; padding-top: 56px; word-break: normal; }
+  body { font-size: 15px; padding-top: 56px; word-break: normal; }
   *, *::before, *::after { max-width: 100%; box-sizing: border-box; }
 
   /* ── Nav ──────────────────────────────── */
@@ -1108,28 +1112,28 @@ footer {
         <span class="pain-num">01</span>
         <div>
           <p class="pain-title">何年やっても、スコアが変わらない。</p>
-          <p class="pain-body">YouTubeで試して、レッスンに通って、道具を換えて。それでも何かが、足りない気がする。</p>
+          <p class="pain-body">YouTube、レッスン、道具の買い替え。全部やった。それでも変わらない。</p>
         </div>
       </li>
       <li class="pain-item fade-up delay-2">
         <span class="pain-num">02</span>
         <div>
-          <p class="pain-title">「型通り」に教わるのが、しんどかった。</p>
-          <p class="pain-body">教わったとおりに動こうとすると、身体がついてこない。なのに「感覚がおかしい」と言われる。</p>
+          <p class="pain-title">「型通り」に直されるのが、しんどい。</p>
+          <p class="pain-body">言われた通りに動こうとすると、身体が違うと言う。なのに「感覚がおかしい」と言われる。</p>
         </div>
       </li>
       <li class="pain-item fade-up delay-3">
         <span class="pain-num">03</span>
         <div>
-          <p class="pain-title">初心者だから、恥ずかしくて聞けない。</p>
-          <p class="pain-body">こんな基本的なことを聞いて大丈夫だろうか、と思うとレッスンに行くのをためらってしまう。</p>
+          <p class="pain-title">初心者で、聞くのが恥ずかしい。</p>
+          <p class="pain-body">こんな基本的なこと聞いていいのか。そのプレッシャーが、レッスンに行く足を止めている。</p>
         </div>
       </li>
       <li class="pain-item fade-up delay-4">
         <span class="pain-num">04</span>
         <div>
-          <p class="pain-title">誰かに、ちゃんと「見てほしい」だけ。</p>
-          <p class="pain-body">理論でも技術でもなく、自分のことを理解したうえで教えてくれる人に、出会えていない。</p>
+          <p class="pain-title">「自分のことを分かって教えてくれる人」に、まだ出会えていない。</p>
+          <p class="pain-body">理論じゃなく、自分を見てくれるコーチが、欲しかった。</p>
         </div>
       </li>
     </ul>
@@ -1141,8 +1145,8 @@ footer {
 <section id="philosophy">
   <div class="container">
     <div class="philosophy-quote-wrap fade-up">
-      <p class="philosophy-quote">人によって、骨格が違う。筋力が違う。感覚が違う。だから教え方も、ひとりずつ違う。</p>
-      <p class="philosophy-sub">ゴルフに「正解の型」はあっても、「あなたの型」はまだ、あなたの中にしかない。それを一緒に探すのが、私の仕事です。</p>
+      <p class="philosophy-quote">骨格が違う。筋力が違う。感覚が違う。だから、教え方もひとりずつ違う。</p>
+      <p class="philosophy-sub">「正解の型」じゃなく、「あなたの型」を探すのが、私の仕事です。</p>
     </div>
   </div>
 </section>
@@ -1152,30 +1156,30 @@ footer {
 <section id="why">
   <div class="container">
     <div class="sec-title fade-up">
-      <h2>砥綿コーチが、「ただのレッスンプロ」ではない理由。</h2>
+      <h2>砥綿コーチが、普通じゃない理由。</h2>
       <span class="sec-en">WHY TOWATA COACH</span>
     </div>
-    <p class="why-lead fade-up"><strong>多くのコーチは、スイングを直します。</strong>砥綿コーチは、あなたを見ます。</p>
+    <p class="why-lead fade-up"><strong>多くのコーチはスイングを直す。</strong>砥綿コーチは、あなたを見る。</p>
     <div class="why-grid">
       <div class="why-card fade-up delay-1">
         <span class="why-card-num">① スイングを見る</span>
         <h3>軌道、タイミング、体重移動。</h3>
-        <p>でも「教科書通りに直す」のではなく、その人の動きの癖と可能性を読みながら、自然に機能するフォームを一緒に見つけます。</p>
+        <p>「型に直す」のではなく、その人の動きを読みながら、自然に機能するフォームを一緒に見つけます。</p>
       </div>
       <div class="why-card fade-up delay-2">
         <span class="why-card-num">② クラブを見る</span>
         <h3>クラフトマン歴5年。</h3>
-        <p>シャフト、重さ、ライ角、バランス。道具の合う・合わないが、スイングに大きく影響することを、身体で知っています。</p>
+        <p>シャフト・重さ・ライ角。道具の合う・合わないがスイングを変えること、身体で知っています。</p>
       </div>
       <div class="why-card fade-up delay-3">
         <span class="why-card-num">③ 身体を見る</span>
         <h3>格闘技20年の身体感覚。</h3>
-        <p>関節の可動域、重心の使い方、力の伝え方。スポーツの本質から、ゴルフの動きを解きほぐします。</p>
+        <p>重心、可動域、力の伝え方。スポーツの本質から、ゴルフの動きを読み解きます。</p>
       </div>
       <div class="why-card full-width fade-up delay-4">
         <span class="why-card-num">④ そして、あなた自身を見る</span>
-        <h3>性格、感覚、理解のスピード、ゴルフへの向き合い方。</h3>
-        <p>皐月グループのゴルフ場に10年以上携わり、練習場の支配人として数えきれない人のゴルフを見てきた経験が、ここに宿っています。それが「型にはめない」指導の源泉です。</p>
+        <h3>性格、感覚、理解のスピード。</h3>
+        <p>皐月グループでの10年以上の現場経験と、3,000人を超える指導実績。それが「型にはめない」指導の源泉です。</p>
       </div>
     </div>
   </div>
@@ -1227,22 +1231,22 @@ footer {
       <h2>場所を選ばず、本物の指導を。</h2>
       <span class="sec-en">ONLINE LESSON</span>
     </div>
-    <p class="online-lead fade-up">福岡に来られなくても大丈夫です。スマホで撮影したスイング動画をLINEで送るだけで、砥綿コーチが丁寧に添削してお返しします。全国どこからでも受けられます。</p>
+    <p class="online-lead fade-up">福岡に来られなくても大丈夫。スイング動画をLINEで送るだけで、本格添削が届きます。</p>
     <div class="online-features">
       <div class="online-feature fade-up delay-1">
         <span class="icon">📱</span>
         <h4>送るだけ</h4>
-        <p>スマホで撮影してLINEで送信。それだけでOKです。</p>
+        <p>スマホ撮影 → LINEで送信。それだけでOK。</p>
       </div>
       <div class="online-feature fade-up delay-2">
         <span class="icon">🎯</span>
         <h4>本格添削</h4>
-        <p>スイング・身体の使い方・クラブの振り方まで、丁寧にフィードバック。</p>
+        <p>スイング・身体・クラブの振り方まで丁寧にフィードバック。</p>
       </div>
       <div class="online-feature fade-up delay-3">
         <span class="icon">🗾</span>
         <h4>全国対応</h4>
-        <p>福岡以外の方も受講できます。出張や転勤中の方にも。</p>
+        <p>出張中・地方在住の方にも。どこからでも受けられます。</p>
       </div>
     </div>
   </div>
@@ -1261,7 +1265,7 @@ footer {
         <span class="lesson-num">01</span>
         <div>
           <h3>初心者・ゴルフを始めたい方</h3>
-          <p class="lesson-body">「どこから始めたらいいか分からない」という方のための最初の一歩。道具の持ち方から身体の使い方の感覚まで。恥ずかしいことは何もありません。分かるまで、何度でも。</p>
+          <p class="lesson-body">「どこから始めたらいいか」という方のための一歩目。恥ずかしいことは何もありません。分かるまで、何度でも。</p>
           <span class="lesson-tag">安心して、始められます</span>
         </div>
       </div>
@@ -1269,7 +1273,7 @@ footer {
         <span class="lesson-num">02</span>
         <div>
           <h3>スコアが伸び悩んでいる方</h3>
-          <p class="lesson-body">「100が切れない」「何年やっても変わらない」。そこには必ず理由があります。スイングだけでなく、クラブの適合、身体の使い方、考え方の癖まで一緒に見ていきます。</p>
+          <p class="lesson-body">「何年やっても変わらない」には必ず理由がある。スイングだけでなく、クラブ・身体・思考の癖まで見ます。</p>
           <span class="lesson-tag">壁を、一緒に越えましょう</span>
         </div>
       </div>
@@ -1277,7 +1281,7 @@ footer {
         <span class="lesson-num">03</span>
         <div>
           <h3>他のレッスンで合わなかった方</h3>
-          <p class="lesson-body">型に押し込まれて、身体が違和感を訴えていた。そういう経験をされた方ほど、砥綿コーチの指導が響くかもしれません。</p>
+          <p class="lesson-body">型に違和感を感じてきた方ほど、砥綿コーチの指導が響きます。</p>
           <span class="lesson-tag">やり直せます、丁寧に</span>
         </div>
       </div>
@@ -1285,7 +1289,7 @@ footer {
         <span class="lesson-num">04</span>
         <div>
           <h3>本気で上達したい方</h3>
-          <p class="lesson-body">クラブ選定から身体の使い方、スイング改造まで。ゴルフの全体像を見ながら、本質的な上達を目指します。</p>
+          <p class="lesson-body">クラブ選定から身体の使い方まで、ゴルフの全体像から本質的な上達を目指します。</p>
           <span class="lesson-tag">本質から、変わっていく</span>
         </div>
       </div>
@@ -1305,7 +1309,7 @@ footer {
       <div class="profile-text fade-up">
         <h2>砥綿 コーチ</h2>
         <span class="profile-en">Golf Coach / Fukuoka</span>
-        <p class="profile-bio">ゴルフ場でボールを拾う仕事から始め、フロント、支配人、クラフトマン、そしてコーチへ。ゴルフに関わるあらゆる「現場」を経験してきた、異色の経歴の持ち主です。格闘技20年で培った身体感覚と、クラブ製作・調整の技術知識、そして一人ひとりと向き合い続けた3,000回を超える指導経験が、砥綿コーチのすべてです。</p>
+        <p class="profile-bio">ゴルフ場のボール拾いから始め、フロント、支配人、クラフトマン、そしてコーチへ。格闘技20年で培った身体感覚と、クラブ調整の技術知識、3,000回超の指導経験が、砥綿コーチのすべてです。</p>
         <ul class="profile-career">
           <li>皐月グループ ゴルフ場勤務 10年以上</li>
           <li>練習場支配人として運営・指導を統括</li>
@@ -1378,28 +1382,28 @@ footer {
         <span class="future-dot"></span>
         <div>
           <p class="future-title">ゴルフが、怖くなくなる。</p>
-          <p class="future-body">「打てるかな」「迷惑かけないかな」という不安が消えていき、コースに立つことが楽しみになります。</p>
+          <p class="future-body">「打てるかな」という不安が消えて、コースに立つのが楽しみになります。</p>
         </div>
       </li>
       <li class="future-item fade-up delay-2">
         <span class="future-dot"></span>
         <div>
-          <p class="future-title">身体が、言うことをきくようになる。</p>
-          <p class="future-body">「頭では分かるのに、身体が動かない」という感覚が、少しずつ解けていきます。</p>
+          <p class="future-title">身体が、言うことをきく。</p>
+          <p class="future-body">「頭では分かるのに動かない」という感覚が、少しずつ解けていきます。</p>
         </div>
       </li>
       <li class="future-item fade-up delay-3">
         <span class="future-dot"></span>
         <div>
           <p class="future-title">道具が、味方になる。</p>
-          <p class="future-body">自分に合ったクラブを知ることで、同じスイングでも結果が変わる体験ができます。</p>
+          <p class="future-body">自分に合ったクラブを知るだけで、同じスイングでも結果が変わります。</p>
         </div>
       </li>
       <li class="future-item fade-up delay-4">
         <span class="future-dot"></span>
         <div>
           <p class="future-title">ゴルフの話が、できるようになる。</p>
-          <p class="future-body">職場の同僚、友人、家族と。ゴルフを通じた時間が、豊かに変わっていきます。</p>
+          <p class="future-body">同僚、友人、家族と。ゴルフを通じた時間が、豊かに変わっていきます。</p>
         </div>
       </li>
     </ul>
@@ -1417,27 +1421,27 @@ footer {
     <div class="faq-list fade-up">
       <div class="faq-item">
         <button class="faq-q">まったくの初心者ですが、大丈夫ですか？<span class="faq-icon"></span></button>
-        <div class="faq-a"><p class="faq-a-inner">むしろ、初心者の方は大歓迎です。変な癖がついていない分、一番伸びるのは初心者の方です。クラブの握り方から、一緒に始めましょう。</p></div>
+        <div class="faq-a"><p class="faq-a-inner">むしろ大歓迎です。変な癖がない分、初心者が一番伸びます。クラブの握り方から始めましょう。</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">道具を持っていないのですが、問題ありませんか？<span class="faq-icon"></span></button>
-        <div class="faq-a"><p class="faq-a-inner">問題ありません。まずは体験してみてください。「自分に何が必要か」が分かってから、道具を揃えるのが一番です。</p></div>
+        <div class="faq-a"><p class="faq-a-inner">問題ありません。体験してから「何が必要か」を判断するのが一番です。</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">他の教室に通っていたのですが、途中から受けられますか？<span class="faq-icon"></span></button>
-        <div class="faq-a"><p class="faq-a-inner">もちろんです。これまでの経緯も含めて、丁寧に整理するところから始めます。「上書き」ではなく、一緒に「整理」していきましょう。</p></div>
+        <div class="faq-a"><p class="faq-a-inner">もちろんです。これまでの経緯も含めて、丁寧に整理するところから始めます。</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">福岡以外に住んでいますが、受けられますか？<span class="faq-icon"></span></button>
-        <div class="faq-a"><p class="faq-a-inner">オンライン動画添削コースなら全国どこからでも受けられます。スマホで撮影したスイング動画を送るだけでOKです。</p></div>
+        <div class="faq-a"><p class="faq-a-inner">オンライン動画添削なら全国対応。スマホで撮ったスイング動画を送るだけです。</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">女性や高齢の方でも受けられますか？<span class="faq-icon"></span></button>
-        <div class="faq-a"><p class="faq-a-inner">はい、ご安心ください。年齢や性別に関係なく、その方の身体の状態や目標に合わせた指導をします。</p></div>
+        <div class="faq-a"><p class="faq-a-inner">はい。年齢・性別に関わらず、その方の身体と目標に合わせた指導をします。</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">オンラインレッスンはどうやって受けますか？<span class="faq-icon"></span></button>
-        <div class="faq-a"><p class="faq-a-inner">LINEでスイング動画を送っていただくだけです。添削動画または音声コメントでお返しします。スマホ1台あればOKです。</p></div>
+        <div class="faq-a"><p class="faq-a-inner">LINEでスイング動画を送るだけ。添削動画または音声コメントでお返しします。スマホ1台でOKです。</p></div>
       </div>
     </div>
   </div>
@@ -1448,10 +1452,10 @@ footer {
 <section id="closing">
   <div class="container">
     <div class="sec-title fade-up">
-      <h2>一度、話してみてください。それだけで、いいです。</h2>
+      <h2>一度、話してみてください。</h2>
       <span class="sec-en">CONTACT</span>
     </div>
-    <p class="closing-quote fade-up">申し込みのプレッシャーはありません。「合うかどうか確かめたい」という気持ちで、十分です。あなたのゴルフの話を、聞かせてください。</p>
+    <p class="closing-quote fade-up">申し込みのプレッシャーはありません。「合うか確かめたい」だけで十分です。あなたのゴルフの話を、聞かせてください。</p>
     <p class="fade-up" style="font-size:14px;color:var(--muted);margin-bottom:1.5rem;letter-spacing:0.05em;">ご予約・お問い合わせはLINEから</p>
     <div class="line-cta-wrap fade-up">
       <a href="https://line.me/YOUR_LINE_ID" target="_blank" class="btn-line-green">LINEで無料相談・予約する</a>
