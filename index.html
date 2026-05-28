@@ -462,6 +462,36 @@ section:nth-of-type(even) { background: var(--bg-alt); }
 .price-sub { font-size: 11px; color: var(--muted); display: block; margin-top: 3px; }
 .price-note { margin-top: 1.2rem; font-size: 12px; color: var(--muted); text-align: right; }
 
+/* ── LINE CTA ── */
+.line-cta-wrap {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.btn-line-green {
+  display: inline-block;
+  background: #06C755;
+  color: #FFFFFF;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  padding: 16px 2rem;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: opacity 0.25s, transform 0.25s;
+}
+.btn-line-green:hover { opacity: 0.82; transform: translateY(-1px); color: #FFFFFF; }
+.line-cta-note {
+  margin-top: 0.7rem;
+  font-size: 11px;
+  color: var(--muted);
+}
+@media (max-width: 768px) {
+  .btn-line-green { max-width: 100%; }
+}
+
 
 /* ══════════════════════════════════════════════════
    6. オンライン
@@ -1018,6 +1048,10 @@ footer {
       </table>
     </div>
     <p class="price-note fade-up">料金はすべて税込です。</p>
+    <div class="line-cta-wrap fade-up">
+      <a href="https://line.me/YOUR_LINE_ID" target="_blank" class="btn-line-green">まずはLINEで無料相談する</a>
+      <p class="line-cta-note">返信は砥綿コーチ本人から。営業メッセージは送りません。</p>
+    </div>
   </div>
 </section>
 
@@ -1140,10 +1174,12 @@ footer {
         </div>
       </div>
     </div>
+    <div class="line-cta-wrap fade-up">
+      <a href="https://line.me/YOUR_LINE_ID" target="_blank" class="btn-line-green">まずはLINEで無料相談する</a>
+      <p class="line-cta-note">返信は砥綿コーチ本人から。営業メッセージは送りません。</p>
+    </div>
   </div>
 </section>
-
-
 
 
 <!-- 10. アクセス -->
