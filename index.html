@@ -514,30 +514,89 @@ section:nth-of-type(even) { background: var(--bg-alt); }
 
 
 /* ══════════════════════════════════════════════════
-   6. オンライン
+   6. オンライン（ダークセクション）
 ══════════════════════════════════════════════════ */
+#online { background: #141414; }
+#online .sec-title h2 { color: #FFFFFF; }
+.online-lead { color: rgba(255,255,255,0.65); font-size: 15px; line-height: 2; max-width: 640px; }
 .online-features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  margin: 2.5rem 0 3rem;
+  margin: 3rem 0 2.5rem;
 }
 .online-feature {
-  background: #FFFFFF;
-  border: 1px solid var(--border);
-  padding: 2rem 1.5rem;
   text-align: center;
+  padding: 0.5rem 2rem;
+  border-left: 1px solid rgba(255,255,255,0.10);
 }
-.online-feature .icon { font-size: 2rem; margin-bottom: 1rem; display: block; }
+.online-feature:first-child { border-left: none; }
+.online-icon {
+  width: 64px; height: 64px;
+  margin: 0 auto 1.2rem;
+  border: 1px solid rgba(184,150,79,0.55);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex: none;
+}
+.online-icon svg {
+  width: 26px; height: 26px;
+  stroke: var(--gold); fill: none;
+  stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+}
+.online-step {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  margin-bottom: 0.45rem;
+}
 .online-feature h4 {
   font-family: 'Noto Serif JP', serif;
-  font-weight: 300;
-  font-size: 0.95rem;
-  margin-bottom: 0.6rem;
-  color: var(--gold);
+  font-weight: 400;
+  font-size: 1.05rem;
+  margin-bottom: 0.7rem;
+  color: #FFFFFF;
+  letter-spacing: 0.08em;
 }
-.online-feature p { font-size: 13px; color: var(--muted); line-height: 1.8; }
-.online-lead { color: var(--muted); font-size: 15px; line-height: 2; max-width: 640px; }
+.online-feature p { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.9; }
+.online-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.5rem;
+  border: 1px solid rgba(184,150,79,0.45);
+  padding: 1.2rem 1.8rem;
+  max-width: 660px;
+  margin: 0 auto;
+}
+.online-price {
+  font-family: 'Noto Serif JP', serif;
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+}
+.online-price strong {
+  color: var(--gold);
+  font-size: 1.35em;
+  font-weight: 400;
+  font-family: 'Cormorant Garamond', 'Noto Serif JP', serif;
+}
+.online-limit {
+  font-size: 11px;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 0.08em;
+}
+.online-cta a {
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(184,150,79,0.5);
+  padding-bottom: 2px;
+  white-space: nowrap;
+}
 
 
 /* ══════════════════════════════════════════════════
@@ -916,8 +975,22 @@ footer {
   .btn-line-green { max-width: 84%; font-size: 14px; padding: 11px 1rem; margin: 0 auto; }
 
   /* ── オンライン ────────────────────────── */
-  .online-features { grid-template-columns: 1fr; gap: 0.75rem; margin: 1.5rem 0 2rem; }
-  .online-feature { padding: 1.4rem 1.2rem; }
+  .online-features { grid-template-columns: 1fr; gap: 0; margin: 1.6rem 0 1.8rem; }
+  .online-feature {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    text-align: left;
+    padding: 1.15rem 0.2rem;
+    border-left: none;
+    border-top: 1px solid rgba(255,255,255,0.10);
+  }
+  .online-feature:first-child { border-top: none; }
+  .online-icon { width: 52px; height: 52px; margin: 0; }
+  .online-icon svg { width: 22px; height: 22px; }
+  .online-step { margin-bottom: 0.2rem; font-size: 0.85rem; }
+  .online-feature h4 { font-size: 0.95rem; margin-bottom: 0.35rem; }
+  .online-cta { padding: 1rem 1.2rem; gap: 0.35rem 1rem; text-align: center; flex-direction: column; }
   .btn-outline {
     display: block;
     width: 100%;
@@ -1281,20 +1354,40 @@ footer {
     <p class="online-lead fade-up">福岡に来られなくても大丈夫。スイング動画をLINEで送るだけで、本格添削が届きます。</p>
     <div class="online-features">
       <div class="online-feature fade-up delay-1">
-        <span class="icon">📱</span>
-        <h4>送るだけ</h4>
-        <p>スマホ撮影 → LINEで送信。それだけでOK。</p>
+        <div class="online-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M12 15.5V8.5"/><path d="M9.5 11 12 8.5 14.5 11"/></svg>
+        </div>
+        <div class="online-body">
+          <span class="online-step">01</span>
+          <h4>送るだけ</h4>
+          <p>スマホで撮影して、LINEで送信。それだけでOK。</p>
+        </div>
       </div>
       <div class="online-feature fade-up delay-2">
-        <span class="icon">🎯</span>
-        <h4>本格添削</h4>
-        <p>スイング・身体・クラブの振り方まで丁寧にフィードバック。</p>
+        <div class="online-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 3.5a2.6 2.6 0 0 1 3.7 3.7L8 20 3 21l1-5Z"/><path d="M14.5 6 18 9.5"/></svg>
+        </div>
+        <div class="online-body">
+          <span class="online-step">02</span>
+          <h4>本格添削</h4>
+          <p>スイング・身体・クラブの振り方まで丁寧にフィードバック。</p>
+        </div>
       </div>
       <div class="online-feature fade-up delay-3">
-        <span class="icon">🗾</span>
-        <h4>全国対応</h4>
-        <p>出張中・地方在住の方にも。どこからでも受けられます。</p>
+        <div class="online-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.5S5 15.5 5 10a7 7 0 0 1 14 0c0 5.5-7 11.5-7 11.5Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        </div>
+        <div class="online-body">
+          <span class="online-step">03</span>
+          <h4>全国対応</h4>
+          <p>出張中・地方在住の方にも。どこからでも受けられます。</p>
+        </div>
       </div>
+    </div>
+    <div class="online-cta fade-up">
+      <p class="online-price">オンライン動画添削 <strong>¥3,300</strong>／月（税込）</p>
+      <span class="online-limit">先着20名限定価格</span>
+      <a href="#price">料金の詳細を見る</a>
     </div>
   </div>
 </section>
