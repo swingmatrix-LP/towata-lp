@@ -34,7 +34,7 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   max-width: 100vw;
-  word-break: normal;
+  word-break: auto-phrase;
   overflow-wrap: break-word;
   padding-top: 64px;
 }
@@ -896,7 +896,7 @@ footer {
 
   /* ── Base & 横スクロール防止 ──────────── */
   html, body { overflow-x: hidden; }
-  body { font-size: 15px; padding-top: 56px; word-break: normal; }
+  body { font-size: 15px; padding-top: 56px; word-break: auto-phrase; }
   *, *::before, *::after { max-width: 100%; box-sizing: border-box; }
 
   /* ── Nav ──────────────────────────────── */
@@ -1206,7 +1206,7 @@ footer {
 
 <!-- 体験レッスンバナー -->
 <div class="trial-banner">
-  <p>キャンペーン実施中 ／ <strong>体験レッスン ¥1,000</strong>（税込・通常¥3,300）</p>
+  <p><span class="nw">キャンペーン実施中 ／ </span><span class="nw"><strong>体験レッスン ¥1,000</strong>（税込・通常¥3,300）</span></p>
 </div>
 
 
@@ -1269,7 +1269,7 @@ footer {
       <h2><span class="nw">砥綿コーチが、</span><span class="nw">普通じゃない理由。</span></h2>
       <span class="sec-en">WHY TOWATA COACH</span>
     </div>
-    <p class="why-lead fade-up"><strong>多くのコーチはスイングを直す。</strong>砥綿コーチは、あなたを見る。</p>
+    <p class="why-lead fade-up"><span class="nw"><strong>多くのコーチはスイングを直す。</strong></span><span class="nw">砥綿コーチは、</span><span class="nw">あなたを見る。</span></p>
     <div class="why-grid">
       <div class="why-card fade-up delay-1">
         <span class="why-card-num">① スイングを見る</span>
