@@ -1621,6 +1621,23 @@ footer {
 
 
 <script>
+/* ── 常にページ先頭（ヒーロー）で開く ───
+   共有リンクに #access 等のハッシュが残っていたり、ブラウザのスクロール位置
+   復元が働くと、URLを開いた時に途中のセクションから表示されてしまう。それを防ぎ、
+   訪問者を必ずファーストビューに着地させる。ナビのアンカーはクリック時に動くので影響なし。 */
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+(function () {
+  function toTop() {
+    if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+    var html = document.documentElement, prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = 'auto';   // 一瞬だけスムーズ挙動を切って即座に先頭へ
+    window.scrollTo(0, 0);
+    html.style.scrollBehavior = prev;
+  }
+  toTop();
+  window.addEventListener('load', toTop);   // 画像読み込み後のレイアウトずれにも対応
+})();
+
 /* ── ナビ ハンバーガー ─── */
 const hamburger = document.getElementById('hamburger');
 const navMobile = document.getElementById('nav-mobile');
